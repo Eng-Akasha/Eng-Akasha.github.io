@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail of Code</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        nav ul {
+            background-color: #333;
+            overflow: hidden;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section button {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-section button:hover {
+            background-color: #555;
+        }
+
+        .interactive-section, .community-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .video-upload-section {
+            background-color: #1e1e1e;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services-section {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service-card {
+            display: inline-block;
+            background-color: #555;
+            color: #fff;
+            padding: 20px;
+            width: 30%;
+            margin: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            background-color: #777;
+        }
+
+        .contact-section {
+            background-color: #121212;
+            padding: 50px 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Trail of Code</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#interactive">Interactive Learning</a></li>
+        <li><a href="#services">Courses</a></li>
+        <li><a href="#video-upload">Upload Videos</a></li>
+        <li><a href="#programming-languages">Languages</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero-section">
+    <h1>Start Your Coding Journey Today</h1>
+    <button onclick="scrollToSection('interactive')">Start Learning</button>
+</section>
+
+<section id="interactive" class="interactive-section">
+    <h2>Interactive Learning</h2>
+    <p>Engage with our live code editor and interactive coding challenges.</p>
+</section>
+
+<section id="video-upload" class="video-upload-section">
+    <h2>Upload Your Learning Videos</h2>
+    <input type="file" accept="video/*">
+    <p>Share your knowledge and earn points and achievements!</p>
+</section>
+
+<section id="services" class="services-section">
+    <h2>Courses</h2>
+    <div class="service-card">AI</div>
+    <div class="service-card">Machine Learning</div>
+    <div class="service-card">Data Structures</div>
+    <div class="service-card">Algorithms</div>
+    <div class="service-card">Web Development</div>
+    <div class="service-card">Mobile App Development</div>
+    <div class="service-card">Game Development</div>
+    <div class="service-card">Database Management</div>
+</section>
+
+<section id="programming-languages" class="services-section">
+    <h2>Programming Languages</h2>
+    <div class="service-card">HTML</div>
+    <div class="service-card">CSS</div>
+    <div class="service-card">JavaScript</div>
+    <div class="service-card">Python</div>
+    <div class="service-card">Java</div>
+    <div class="service-card">C</div>
+    <div class="service-card">C++</div>
+    <div class="service-card">C#</div>
+    <div class="service-card">PHP</div>
+    <div class="service-card">Ruby</div>
+    <div class="service-card">Go</div>
+    <div class="service-card">Rust</div>
+    <div class="service-card">Kotlin</div>
+</section>
+
+<section id="community" class="community-section">
+    <h2>Community</h2>
+    <p>Join discussions, ask questions, and share your knowledge with others.</p>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">...</form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Trail of Code</p>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
